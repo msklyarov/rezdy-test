@@ -23,16 +23,7 @@ class RootContainer extends React.Component<{}, IState> {
   render() {
     return this.state.showFirstPage ?
       <FirstPage onClickHandler={this.handlePageChange} /> :
-      <SecondPage
-        // {...pick([
-        //   'recipes',
-        //   // 'ingredients',
-        //   'fetchRecipes',
-        //   // 'clearRecipes',
-        //   // 'fetchIngredients',
-        //   // 'clearIngredients'
-        // ], this.props)}
-      />;
+      <SecondPage />;
   }
 }
 

@@ -6,7 +6,7 @@ export default (state = [], action: IngredientsAction) => {
     case ActionTypes.INGREDIENTS_FETCH.FULFILLED:
       return action.payload;
     case ActionTypes.INGREDIENTS_CLEAR:
-      return {};
+      return [];
     default:
       return state;
   }
